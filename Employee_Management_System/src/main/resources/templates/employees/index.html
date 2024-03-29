@@ -14,7 +14,7 @@
 	<div th:include="navbar"></div>
 	<div class="container">
 		<h1 style="text-align: center;">Employees</h1>
-		<a class="btn btn-primary" href="/employees/create">Create Employee</a>
+		<a class="btn btn-primary" th:href="@{/employees/create}">Create Employee</a>
 		<table class="table table-striped">
 			<thead>
 				<tr>

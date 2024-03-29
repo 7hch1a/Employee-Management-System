@@ -23,7 +23,7 @@
 		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
-					<form action="/projects/employees/add" method="POST" th:object="${employeeProjectDto}">
+					<form th:action="@{/projects/employees/add}" method="POST" th:object="${employeeProjectDto}">
 						<!--form header-->
 
 						<div class="modal-header">
@@ -71,7 +71,7 @@
 			aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
-					<form action="/projects/employees/delete" method="POST" th:object="${employeeProjectDto}">
+					<form th:action="@{/projects/employees/delete}" method="POST" th:object="${employeeProjectDto}">
 						<div class="modal-header">
 							<h5 class="modal-title" id="deleteEmployeeModalLabel">Delete Employee</h5>
 							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -124,7 +124,7 @@
 		    </tbody>
 		</table>
 		
-		<a href="/projects" class="btn btn-secondary">Go back to Project</a>
+		<a th:href="@{/projects}" class="btn btn-secondary">Go back to Project</a>
 
 		<!-- Error message section -->
 		<div th:if="${errorMessage}" class="alert alert-danger" role="alert">
