@@ -10,9 +10,9 @@ The API base URL for accessing the endpoints is: http://localhost:8082/api
 
 ## Authentication
 
-The EMS API require authentication for accessing its endpoints.
-Username : `User`
-Password : `password`
+- The EMS API require authentication for accessing its endpoints.
+- Username : `User`
+- Password : `password`
 
 ## Endpoints
 
