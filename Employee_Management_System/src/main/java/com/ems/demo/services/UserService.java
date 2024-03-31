@@ -1,6 +1,7 @@
 package com.ems.demo.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -12,8 +13,6 @@ import com.ems.demo.models.ApplicationUser;
 @Service
 public class UserService implements UserDetailsService {
 	
-	@Autowired
-	private PasswordEncoder encoder;
 	
 	@Autowired
 	private UserRepository userRepository;
