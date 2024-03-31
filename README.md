@@ -11,8 +11,8 @@ The API base URL for accessing the endpoints is: http://localhost:8082/api
 ## Authentication
 
 The EMS API require authentication for accessing its endpoints.
-Username : User
-Password : password
+Username : `User`
+Password : `password`
 
 ## Endpoints
 
@@ -64,6 +64,9 @@ Password : password
 The API documentation is available using Swagger UI, which provides an interactive interface for exploring and testing the endpoints.
 
 - **URL**: [Swagger UI](http://localhost:8082/api/swagger-ui.html)
+
+##Note:
+Swagger UI need to change all the controller from @Controller to @RestController, but it would break the application logic since the rest controller return JSON rather than http response
 
 ## Database Configuration
 
